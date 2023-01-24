@@ -1,0 +1,154 @@
+<h1>{{title}}</h1>
+
+<table>
+    <tr>
+        <td>B_id</td>
+        <td>B_name</td>
+    </tr>
+    {{#each building}}
+    <tr>
+        <td>{{B_id}}</td>
+        <td>{{B_name}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title2}}</h1>
+<table>
+    <tr>
+        <td>C_id</td>
+        <td>C_name</td>
+        <td>Professor</td>
+        <td>Number_of_participants</td>
+    </tr>
+    {{#each inha_class}}
+    <tr>
+        <td>{{C_id}}</td>
+        <td>{{C_name}}</td>
+        <td>{{professor}}</td>
+        <td>{{number_of_participants}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title3}}</h1>
+<table>
+    <tr>
+        <td>Club_id</td>
+        <td>Club_name</td>
+        <td>R_id</td>
+    </tr>
+    {{#each club}} 
+    <tr>
+        <td>{{Club_id}}</td>
+        <td>{{Club_name}}</td>
+        <td>{{R_id}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title4}}</h1>
+<table>
+    <tr>
+        <td>D_id</td>
+        <td>D_name</td>
+        <td>D_email</td>
+        <td>D_phone_number</td>
+    </tr>
+    {{#each department}}
+    <tr>
+        <td>{{D_id}}</td>
+        <td>{{D_name}}</td>
+        <td>{{D_email}}</td>
+        <td>{{D_phone_number}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title5}}</h1>
+<table>
+    <tr>
+        <td>E_id</td>
+        <td>E_name</td>
+        <td>Position</td>
+        <td>B_id</td>
+        <td>D_id</td>
+    </tr>
+    {{#each employee}} 
+    <tr>
+        <td>{{E_id}}</td>
+        <td>{{E_name}}</td>
+        <td>{{position}}</td>
+        <td>{{B_id}}</td>
+        <td>{{D_id}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title6}}</h1>
+<table>
+    <tr>
+        <td>R_id</td>
+        <td>R_name</td>
+        <td>Capacity</td>
+        <td>B_id</td>
+    </tr>
+    {{#each room}} 
+    <tr>
+        <td>{{R_id}}</td>
+        <td>{{R_name}}</td>
+        <td>{{capacity}}</td>
+        <td>{{B_id}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title7}}</h1>
+<table>
+    <tr>
+        <td>S_id</td>
+        <td>S_name</td>
+        <td>S_email</td>
+        <td>S_phone_number</td>
+        <td>Major</td>
+        <td>D_id</td>
+    </tr>
+    {{#each student}} 
+    <tr>
+        <td>{{S_id}}</td>
+        <td>{{S_name}}</td>
+        <td>{{S_email}}</td>
+        <td>{{S_phone_number}}</td>
+        <td>{{major}}</td>
+        <td>{{D_id}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title8}}</h1>
+<table>
+    <tr>
+        <td>S_id</td>
+        <td>C_id</td>
+    </tr>
+    {{#each take_class}} 
+    <tr>
+        <td>{{S_id}}</td>
+        <td>{{C_id}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{title9}}</h1>
+<table>
+    <tr>
+        <td>Club_id</td>
+        <td>S_id</td>
+    </tr>
+    {{#each take_club}} 
+    <tr>
+        <td>{{Club_id}}</td>
+        <td>{{S_id}}</td>
+    </tr>
+    {{/each}}
+</table>

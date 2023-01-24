@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+<table>
+    <tr>
+        <td>S_id</td>
+        <td>S_name</td>
+        <td>S_email</td>
+        <td>S_phone_number</td>
+        <td>major</td>
+        <td>D_id</td>
+    </tr>
+    {{#each student}}
+    <tr>
+        <td>{{S_id}}</td>
+        <td>{{S_name}}</td>
+        <td>{{S_email}}</td>
+        <td>{{S_phone_number}}</td>
+        <td>{{major}}</td>
+        <td>{{D_id}}</td>
+    </tr>
+    {{/each}}
+</table>
